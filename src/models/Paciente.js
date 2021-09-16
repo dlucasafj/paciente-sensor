@@ -1,7 +1,7 @@
 class Paciente {
 
   constructor(id,nome, connection) {
-    this.id = id;
+    this.id = Math.floor(Math.random()*9999);
     this.equi = [];
     this.name = nome;
     this.connection = connection;
