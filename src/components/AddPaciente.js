@@ -9,7 +9,7 @@ import { toast } from "react-toastify";
  * Cria Cliente Socket
  */
 // const socket_cliente = new WebSocket("ws://api-pbl-redes-pb01.herokuapp.com/");
-const socket_cliente = new WebSocket("ws://localhost:3002");
+let  socket_cliente = new WebSocket(process.env.REACT_APP_API_URL);
 
 /**
  * Componente que Cria Paciente
@@ -48,6 +48,12 @@ const AddPaciente = () => {
   const close = () => {
     toast.warn("Encerrando Conexão");
     socket_cliente.close();
+    setTimeout(()=>{
+
+      socket_cliente = new WebSocket(process.env.REACT_APP_API_URL);
+      toast.success("Servidor Conectado")
+      setMessage("Conectado")
+    },15000)
   };
 
   /**
