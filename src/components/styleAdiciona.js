@@ -1,71 +1,100 @@
 
 import styled from "styled-components";
 
-export const ADDContainer = styled.div`
+
+export const Container = styled.div`
+  width: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
+  justify-content: center;
+  align-items: center;
+  background-color: #e4fefc;
+`;
+
+export const GroupInput = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+
   align-items: center;
 
-  width: 35vw;
-  height: 80vh;
-
-  position:relative;
-
-  background-color: #D9E7FF;
-
-  border-radius: 10px;
-  /* backdrop-filter: blur(4px); */
-  top: 60px;
-
-  padding: 5px;
-  >label{
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  > input {
-    width: 50%;
-    height: 30px;
-    border: none;
-    border-radius: 8px;
-
-    padding: 5px;
-
-    font-family: "Times New Roman", Times, serif;
-    font-weight: 300;
+  margin: 10px;
+  > label {
     font-size: 15px;
   }
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-
-
- 
+  > input {
+    margin-left: 10px;
+    height: 30px;
+    width: 90%;
+  }
 `;
-export const AreaEquip = styled.div`
+export const Area1 = styled.div`
+  width: 50%;
+  height: 50%;
+
   display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+`;
+
+export const Botoes = styled.div`
   width: 100%;
-  height:30%;
+  height: 100%;
+
+  display: flex;
   justify-content: space-around;
-  align-items:center;
+  align-items: center;
 
-  margin-top: 10px;
-  margin-bottom: 10px;
+  > button {
+    width: 25%;
+    height: 40px;
+    border-color: blue;
+    background-color: blue;
+    border-radius: 20px;
+    cursor: pointer;
 
-  padding-left: 15px;
-  padding-right: 15px;
+    &:hover {
+      border-color: #174ceb;
+      background-color: #174ceb;
 
-  .area1 {
-    display: flex;
-    flex-direction: column;
-    width: 35%;
-  }
-
-  .area2 {
-    display: flex;
-    flex-direction: column;
-    width: 35%;
+      color: #fff;
+    }
   }
 `;
+export const StatusConection = styled.div`
+  width: 50%;
+  height: 10%;
+
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: #d9e7ff;
+
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
+  padding: 5px;
+
+  > span {
+    font-size: 20px;
+    font-family: "Times New Roman", Times, serif;
+    font-style: bold;
+  }
+`;
+
+export const AreaDados = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+`;
+
+
 
 export const Equipamento = styled.button`
   width: 70%;
@@ -90,27 +119,5 @@ export const Equipamento = styled.button`
 
   .btn_active{
     background-color:black !important;
-  }
-`;
-
-export const BTNS=styled.div`
-
-display: flex;
-width: 100%;
-/* height: 30%; */
-align-items: center;
-   > button {
-    width: 35%;
-    height: 30px;
-    border: none;
-    background: #61ff90;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 50px;
-    
-    cursor: pointer;
-    margin: 10px;
-     &:hover{
-        background: #1CFF69;
-     }
   }
 `;
