@@ -48,8 +48,9 @@ const AddPaciente = () => {
   const close = () => {
     toast.warn("Encerrando Conexão");
     socket_cliente.close();
-    setTimeout(()=>{
 
+    // reconecta depois de 15 segundos
+    setTimeout(()=>{
       socket_cliente = new WebSocket(process.env.REACT_APP_API_URL);
       toast.success("Servidor Conectado")
       setMessage("Conectado")
