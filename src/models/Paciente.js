@@ -75,4 +75,4 @@ class Paciente {
   }
 }
 
-module.exports = Paciente;
+export default Paciente;
