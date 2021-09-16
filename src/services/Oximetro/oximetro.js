@@ -57,4 +57,4 @@ class Oximetro {
   }
 }
 
-module.exports = Oximetro;
+export default Oximetro;
