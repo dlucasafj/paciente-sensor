@@ -26,3 +26,8 @@ yarn versão 1.22.11
 
 
 
+## Deploy
+
+Foi feito o deploy da aplicação no provedor de serviços Heroku
+
+Para acessar a aplicação só acessar o link: http://paciente-sensor.herokuapp.com/
