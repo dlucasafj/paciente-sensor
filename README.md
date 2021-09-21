@@ -12,11 +12,11 @@ yarn versão 1.22.11
 ## Passos
 
 ### ZIP
--> Extraia o Projeto em algum diretório
--> Execute o Comando Yarn Init ou Yarn Install, para baixar as dependências
+-> Extraia o Projeto em algum diretório \
+-> Execute o Comando <b>yarn init</b> ou <b>yarn install</b>, para baixar as dependências
 
 ### GitHub
--> Faça o Clone da Aplicação
+-> Faça o Clone da Aplicação\
 -> Execute o Comando yarn install, para baixar as dependências
 
 
